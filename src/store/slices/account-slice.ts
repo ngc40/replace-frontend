@@ -29,7 +29,7 @@ export const getBalances = createAsyncThunk("account/getBalances", async ({ addr
 
     const memoContract = new ethers.Contract(addresses.MEMO_ADDRESS, MemoTokenContract, provider);
     const memoBalance = await memoContract.balanceOf(address);
-    const timeContract = new ethers.Contract(addresses.TIME_ADDRESS, TimeTokenContract, provider);
+    const timeContract = new ethers.Contract(addresses.FLY_ADDRESS, TimeTokenContract, provider);
     const timeBalance = await timeContract.balanceOf(address);
 
     return {
@@ -65,8 +65,8 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
 
     const addresses = getAddresses(networkID);
 
-    if (addresses.TIME_ADDRESS) {
-        const timeContract = new ethers.Contract(addresses.TIME_ADDRESS, TimeTokenContract, provider);
+    if (addresses.FLY_ADDRESS) {
+        const timeContract = new ethers.Contract(addresses.FLY_ADDRESS, TimeTokenContract, provider);
         timeBalance = await timeContract.balanceOf(address);
         stakeAllowance = await timeContract.allowance(address, addresses.STAKING_HELPER_ADDRESS);
     }

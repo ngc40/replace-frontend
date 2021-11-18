@@ -37,22 +37,24 @@ function NavContent() {
     return (
         <div className="dapp-sidebar">
             <div className="branding-header">
-                <Link href="https://wonderland.money" target="_blank">
+                {/* TODO: replace logo   */}
+                <Link href="/" target="_blank">
                     <img alt="" src={WonderlandIcon} />
                 </Link>
 
-                {address && (
+                {/* {address && (
                     <div className="wallet-link">
                         <Link href={`https://cchain.explorer.avax.network/address/${address}`} target="_blank">
                             <p>{shorten(address)}</p>
                         </Link>
                     </div>
-                )}
+                )} */}
             </div>
 
             <div className="dapp-menu-links">
                 <div className="dapp-nav">
-                    <Link
+                    {/* No Dashboard */}
+                    {/* <Link
                         component={NavLink}
                         to="/dashboard"
                         isActive={(match: any, location: any) => {
@@ -64,7 +66,7 @@ function NavContent() {
                             <img alt="" src={DashboardIcon} />
                             <p>Dashboard</p>
                         </div>
-                    </Link>
+                    </Link> */}
 
                     <Link
                         component={NavLink}
@@ -113,6 +115,7 @@ function NavContent() {
                 </div>
             </div>
             <div className="dapp-menu-doc-link">
+                {/* TODO: replace it */}
                 <Link href="https://wonderland.gitbook.io/wonderland/" target="_blank">
                     <img alt="" src={DocsIcon} />
                     <p>Docs</p>

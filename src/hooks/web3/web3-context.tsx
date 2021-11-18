@@ -56,6 +56,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
     const [uri, setUri] = useState(getMainnetURI());
     const [provider, setProvider] = useState<JsonRpcProvider>(new StaticJsonRpcProvider(uri));
 
+    // TODO: connect starmask
     const [web3Modal] = useState<Web3Modal>(
         new Web3Modal({
             cacheProvider: true,

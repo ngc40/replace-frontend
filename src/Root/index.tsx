@@ -24,7 +24,9 @@ function Root() {
         </HashRouter>
     );
 
-    return isApp() ? app() : <Landing />;
+    // No Index Page
+    // return isApp() ? app() : <Landing />;
+    return app();
 }
 
 export default Root;

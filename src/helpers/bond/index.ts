@@ -4,8 +4,8 @@ import { StableBond, CustomBond } from "./stable-bond";
 
 import MimIcon from "../../assets/tokens/MIM.svg";
 import AvaxIcon from "../../assets/tokens/AVAX.svg";
-import MimTimeIcon from "../../assets/tokens/TIME-MIM.svg";
-import AvaxTimeIcon from "../../assets/tokens/TIME-AVAX.svg";
+import MimTimeIcon from "../../assets/tokens/FLY-MIM.svg";
+import AvaxTimeIcon from "../../assets/tokens/FLY-AVAX.svg";
 
 import { StableBondContract, LpBondContract, WavaxBondContract, StableReserveContract, LpReserveContract } from "../../abi";
 
@@ -41,7 +41,7 @@ export const wavax = new CustomBond({
 
 export const mimTime = new LPBond({
     name: "mim_time_lp",
-    displayName: "TIME-MIM LP",
+    displayName: "FLY-MIM LP",
     bondToken: "MIM",
     bondIconSvg: MimTimeIcon,
     bondContractABI: LpBondContract,
@@ -57,7 +57,7 @@ export const mimTime = new LPBond({
 
 export const avaxTime = new CustomLPBond({
     name: "avax_time_lp",
-    displayName: "TIME-AVAX LP",
+    displayName: "FLY-AVAX LP",
     bondToken: "AVAX",
     bondIconSvg: AvaxTimeIcon,
     bondContractABI: LpBondContract,

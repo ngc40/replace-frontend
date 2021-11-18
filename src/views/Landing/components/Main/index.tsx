@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "@material-ui/core";
 import "./main.scss";
-import CatImg from "../../../../assets/icons/Chershire_Cat.png";
+// import CatImg from "../../../../assets/icons/Chershire_Cat.png";
 
 function Main() {
     return (
         <div className="landing-main">
-            <div className="landing-main-img-wrap">
-                <img src={CatImg} alt="" />
-            </div>
+            <div className="landing-main-img-wrap">{/* <img src={CatImg} alt="" /> */}</div>
             <div className="landing-main-btns-wrap">
                 <Link href="https://app.wonderland.money" target="_blank" rel="noreferrer">
                     <div className="landing-main-btn">

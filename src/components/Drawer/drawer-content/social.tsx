@@ -7,6 +7,7 @@ import { ReactComponent as Discord } from "../../../assets/icons/discord.svg";
 export default function Social() {
     return (
         <div className="social-row">
+            {/* TODO: Replace social link  */}
             <Link href="https://github.com/Wonderland-Money/wonderland-frontend" target="_blank">
                 <SvgIcon color="primary" component={GitHub} />
             </Link>

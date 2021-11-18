@@ -1,11 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
-    open-pull-requests-limit: 5
-    reviewers:
-      - 'Abracadabra-money/wonderland-frontend'
-    schedule:
-      interval: 'daily'
-      time: '04:00'
-    target-branch: 'develop'
+    - package-ecosystem: "npm"
+      directory: "/"
+      open-pull-requests-limit: 5
+      schedule:
+          interval: "daily"
+          time: "04:00"
+      target-branch: "develop"
