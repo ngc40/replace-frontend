@@ -103,15 +103,15 @@ function Stake() {
                     <Grid className="stake-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="stake-card-header">
-                                <p className="stake-card-header-title">FLY Staking </p>
-                                <RebaseTimer />
+                                <p className="stake-card-header-title">FLY Staking (3, 3) </p>
+                                {/* <RebaseTimer /> */}
                             </div>
                         </Grid>
 
                         <Grid item>
                             <div className="stake-card-metrics">
                                 <Grid container spacing={2}>
-                                    <Grid item xs={12} sm={4} md={4} lg={4}>
+                                    <Grid item xs={12} sm={6} md={6} lg={6}>
                                         <div className="stake-card-apy">
                                             <p className="stake-card-metrics-title">APY</p>
                                             <p className="stake-card-metrics-value">
@@ -120,7 +120,7 @@ function Stake() {
                                         </div>
                                     </Grid>
 
-                                    <Grid item xs={6} sm={4} md={4} lg={4}>
+                                    <Grid item xs={12} sm={6} md={6} lg={6}>
                                         <div className="stake-card-tvl">
                                             <p className="stake-card-metrics-title">TVL</p>
                                             <p className="stake-card-metrics-value">
@@ -138,12 +138,12 @@ function Stake() {
                                         </div>
                                     </Grid>
 
-                                    <Grid item xs={6} sm={4} md={4} lg={4}>
+                                    {/* <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="stake-card-index">
                                             <p className="stake-card-metrics-title">Current Index</p>
                                             <p className="stake-card-metrics-value">{currentIndex ? <>{trim(Number(currentIndex), 2)} FLY</> : <Skeleton width="150px" />}</p>
                                         </div>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </div>
                         </Grid>
